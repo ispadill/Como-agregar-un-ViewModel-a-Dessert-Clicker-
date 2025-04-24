@@ -139,7 +139,7 @@ private fun DessertClickerApp(
     viewModel: DessertViewModel = viewModel()
 ) {
     val uiState by viewModel.dessertUiState.collectAsState()
-    DessertClickerApp(  
+    DessertClickerApp(
         uiState = uiState,
         onDessertClicked = viewModel::onDessertClicked
     )
